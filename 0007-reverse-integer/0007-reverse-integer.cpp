@@ -1,13 +1,15 @@
 // class Solution {
 // public:
 //     int reverse(int x) {
-//         long long int num = 0;
+//         int num = 0;
 //         bool isNegative = false;
 //         if(x < 0) {
 //             x = abs(x);
 //             isNegative = true;
 //         }
-//         while(x > 0) {
+//         while(x) {
+//          if (num>INT_MAX/10 || num<INT_MIN/10) return 0; // check 32 bit range if r is outside the range then return 0 
+
 //             int rem = x % 10;
 //             x /= 10;
 //             if(x > 0) num = (num + rem) * 10; 
