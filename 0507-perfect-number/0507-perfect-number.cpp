@@ -9,6 +9,6 @@ public:
         
         
         return ((num == 6) || (num == 28) || (num == 496) || (num == 8128) || (num == 33550336));
-
+        // 2p − 1 × (2p − 1), where p is the prime number - Reference - https://en.wikipedia.org/wiki/List_of_Mersenne_primes_and_perfect_numbers
     }
 };
