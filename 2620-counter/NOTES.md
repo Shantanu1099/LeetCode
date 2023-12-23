@@ -1,1 +1,1 @@
-​Just increase the counter & that should work.
+​Just increase the counter & that should make it work.
