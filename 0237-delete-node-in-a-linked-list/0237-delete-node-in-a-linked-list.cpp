@@ -20,6 +20,7 @@ public:
             node = node->next;
         }
         prev->next = NULL;
+//         This will be the last node that is disconnected from the chain bcoz we are assigning the prev->next pointer to NULL
         delete(node);
     }
 };
