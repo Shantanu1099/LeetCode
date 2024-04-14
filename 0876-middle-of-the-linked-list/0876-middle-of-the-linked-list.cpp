@@ -21,5 +21,6 @@ public:
         }
 //         Currently the slow is pointing at the middle node of the linked list, it will consider it as the HEAD & will have all the nodes connected to it in the memory i.e. will return all the nodes till any node has NULL in the next pointer.
         return slow;
+        // Time Complexity - O(n)
     }
 };
