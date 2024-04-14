@@ -11,26 +11,15 @@
 class Solution {
 public:
     ListNode* middleNode(ListNode* head) {
-//         Brute Force approach
-        ListNode* headCopy = head;
-        int count = 1;
-//         Count the nodes in the linkedlist/ size of linkedList
-        while(headCopy != NULL && headCopy->next != NULL) {
-            count++;
-            headCopy = headCopy->next;
-        }
-//         Assign headCopy to the head of the linked List i.e. the first node of the list
-        headCopy = head;
-        count /= 2;
-        while(count) {
-            count--;
-            head = head->next;
-        }
-        headCopy = head;
-        cout << count << " -  count" << endl;
+//         Slow Fast Pointer approach
+        ListNode* slow = head;
+        ListNode* fast = head;
         
-        
-//         Slow Fast Pointer approach / Stylish approach
-        return headCopy;
+        while(fast != NULL && fast->next != NULL) {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+//         Currently the slow is pointing at the middle node of the linked list, it will consider it as the HEAD & will have all the nodes connected to it in the memory i.e. will return all the nodes till any node has NULL in the next pointer.
+        return slow;
     }
 };
