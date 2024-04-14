@@ -18,3 +18,5 @@ headCopy = head;
 cout << count << " -  count" << endl;
 return headCopy;
 ```
+Time Complexity - O(n) + O(n) = 2 * O(n)
+but I want it in just O(n) complexity
