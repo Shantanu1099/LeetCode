@@ -35,8 +35,8 @@ public:
         // cout << slow->val << " -2- " << slow->next << " 0 " << slow->next->val << " 6 " << slow->next->next << endl;
         delete(slow);
         
-        prev = head; // Point prev to the first pointer in the head
+        // prev = head; // Point prev to the first pointer in the head
         
-        return prev;
+        return head;
     }
 };
