@@ -20,7 +20,7 @@ public:
     
     int getRandom() {
         int size = v.size();
-        cout << size << " : size" << endl;
+        // cout << size << " : size" << endl;
         
         int randIndex = rand() % size;
 //         When we moduklo any number by x, the result would always be less than x or 0.....x-1;
