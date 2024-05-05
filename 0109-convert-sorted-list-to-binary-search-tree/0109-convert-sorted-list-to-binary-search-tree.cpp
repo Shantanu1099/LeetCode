@@ -23,6 +23,8 @@ class Solution {
 public:
     TreeNode* sortedListToBST(ListNode* head) {
 //         Corner cases
+//         https://www.youtube.com/watch?v=4zvmruet_H0&list=PLpIkg8OmuX-LH398-_ZcuHiRueOdsJbXU&index=8
+        
         if(head == NULL) return NULL;
         if(head->next == NULL) return new TreeNode(head->val);
         
